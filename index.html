@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding">
+  <meta property="og:title" content="TriForce"/>
+  <meta property="og:description" content="TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding"/>
+  <meta property="og:url" content="https://Infini-AI-Lab.github.io/TriForce/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/images/proj_fig.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TriForce">
+  <meta name="twitter:description" content="TriForce: Lossless Acceleration of Long Sequence Generation with Hierarchical Speculative Decoding">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/proj_fig.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Speculative Decoding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Political-LLM: Large Language Models in Political Science</title>
+  <link rel="icon" type="image/x-icon" href="static/images/triforce.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <style>
+    @font-face {
+      font-family: 'TriForceFont';
+      src: url('static/Triforce.ttf') format('truetype');
+    }
+  
+    .custom-font {
+      font-family: 'TriForceFont', sans-serif !important;
+        font-size: 3.0rem;
+    }
+  </style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- <h3 class="custom-font" style="display: inline;">*</h3> -->
+            <h1 class="title is-2 publication-title" style="display: inline;">Political-LLM: Large Language Models in Political Science</h1>
+            <br><br>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://preminstrel.com/" target="_blank">Hanshi Sun</a><sup>1</sup>,</span>
+                <span class="author-block">
+                <a href="https://dreaming-panda.github.io/" target="_blank">Zhuoming Chen</a><sup>1</sup>,</span>
+                <span class="author-block">
+                    <a href="https://xinyuyang.me/" target="_blank">Xinyu Yang</a><sup>1</sup> 
+                  </span> <br>
+              <span class="author-block">
+                    <a href="https://yuandong-tian.com/" target="_blank"> Yuandong Tian</a><sup>2</sup>,
+                  </span>
+              <span class="author-block">
+                <a href="https://www.andrew.cmu.edu/user/beidic/" target="_blank">Beidi Chen</a><sup>1,2</sup>
+                </span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                <span class="affliation"><small><sup>1</sup>Carnegie Mellon University <sup>2</sup>Meta AI (FAIR)</small></span>
+                <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                </div>
+
+                <div class="column has-text-centered">
+                
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                    <a href="https://arxiv.org/abs/2404.11912" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                    </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                    <a href="https://github.com/Infini-AI-Lab/TriForce/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                    </a>
+                </span>
+
+                <!-- Video Link -->
+                <span class="link-block">
+                    <a href="https://youtu.be/vRAaAyjr6Jo" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                    </a>
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- ----------------------MAIN CONTENTS AS FOLLOWS-------------------------------- -->
+
+
+
+<!-- ABSTRACT -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3" style="text-align: center;"><img src="static/images/Llama.png" style="height: 43px; display: inline; vertical-align:text-top;"/>&nbsp; Abstract</h2> -->
+        <h2 class="title is-3" style="text-align: center;">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          As Large Language Models (LLMs) gain traction across various domains, their potential to transform political science tasks such as election prediction, sentiment analysis, policy impact assessment, and misinformation detection requires thorough examination. In this work, we present the first organized framework covering traditional and modern applications of LLMs in political science, analyzing their capabilities in predictive, explanatory, generative, and agent-based tasks. We also address the societal implications of LLM deployment, considering how these models influence values, preferences, and policies. Our survey provides a comprehensive methodology for integrating LLMs into computational political science, elaborating on benchmark datasets, data preparation strategies, and model design across zero-shot, few-shot, and fine-tuning scenarios. We evaluate the effectiveness of these approaches in handling diverse political science tasks and highlight practical challenges, including data scarcity, bias, and interpretability issues. Finally, we discuss future research directions, highlighting the pipeline of LLM in Political Science, the importance of domain-specific datasets, the need for addressing bias and fairness, and the role of human expertise. We also emphasize the call for novel evaluation criteria that align well with the unique requirements of computational political science. This survey will serve as a guidebook for researchers seeking to harness LLMs for politically oriented tasks, promoting an informed, ethical, and impactful use of Artificial Intelligence in political science.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ABSTRACT END-->
+
+
+
+<!-- INTRODUCTION -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3" style="text-align: center;">Introduction</h2>
+                <div class="content has-text-justified">
+                    <p>
+                      Large Language Models (LLMs) have demonstrated extraordinary capabilities, profoundly impacting fields like healthcare, finance, and education. Their success stems from extensive pre-training on Web-scale text corpora, enabling sophisticated language analysis and contextual responsiveness. LLMs have also shown great promise in social sciences, particularly political science, where they analyze vast corpora of political texts, including speeches, legislative documents, and social media content. These analyses advance understanding in areas like voter behavior, policy formulation, and electoral dynamics, with innovations such as nuanced sentiment analysis and prediction of voting patterns.
+                      However, significant gaps hinder their full potential in political science. These include a lack of systematic frameworks for adapting LLMs to political research, technical challenges like bias and privacy concerns, and insufficient integration of domain-specific knowledge. Addressing these gaps requires interdisciplinary collaboration to enhance the utility, precision, and contextual relevance of LLMs in this field, paving the way for robust research and applications.
+                    </p>
+                    <div style="text-align: center; margin: 30px 0;">
+                      <img src="static/images/llm_polisci.png" alt="PDF as image" width="800">
+                    </div>
+                    
+                    <p>The main contributions of this survey paper could be summarized as:</p>
+                    <ul style="font-size: 1em; line-height: 1.5; margin: 20px;">
+                      <li><strong>Novel Principled Taxonomy:</strong> A new taxonomy is introduced to adapt LLMs in political science, categorizing into two domains: <em>Classic Political Science Functionality</em> (e.g., predictive tasks, causal inference, social impact analysis) and <em>LLM-Driven Methodologies</em> (e.g., datasets, fine-tuning, zero/few-shot learning). This framework bridges gaps in understanding and applying LLMs effectively in the field.</li>
+                      <li><strong>Comprehensive & Multi-Perspective:</strong> The review examines works from political science and computer science perspectives. Politically, it explores how LLMs address complex political concepts, historical nuances, and ideological dynamics. Technologically, it analyzes fine-tuning, prompt engineering, and inference techniques, offering balanced insights into theoretical and practical challenges.</li>
+                      <li><strong>Challenges and Future Directions:</strong> Key challenges include bias mitigation, contextual accuracy, privacy concerns, and high computational costs. Open questions focus on domain-specific datasets, new evaluation metrics, and interpretability improvements, providing a roadmap for advancing Political LLM research and applications.</li>
+                    </ul>
+                    <p>
+                    <span style="background-color: yellow;">Here is how our survey is <b>different</b> from existing ones:</span>
+                    </p>
+                    <div style="width: 100%; text-align: center;">
+                      <table style="margin: auto; border: 1px solid #ddd; border-collapse: collapse; text-align: left; width: 90%;">
+                        <div style="text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 10px;">
+                          Comparison with Existing Surveys on LLM for Political Science Topics
+                        </div>
+                        <thead>
+                          <tr>
+                            <th style="padding: 8px; border: 1px solid #ddd;"> </th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Ziems et al., 2024</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Argyle et al., 2023</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Ornstein et al., 2022</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Rozado, 2023</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Weidinger et al., 2021</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Linegar et al., 2023</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;">Lee et al., 2024</th>
+                            <th style="padding: 8px; border: 1px solid #ddd;"><strong>Ours</strong></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Proposed Taxonomy on LLM for PoliSci</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Literature Review from PoliSci Perspective</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Literature Review from CS Perspective</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Structured Analysis of CPS Methodologies</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Include Experiments and Evaluations</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Application Examples</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Comprehensive Summary of Benchmarks</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Analyzing Limitations in Existing Methodologies</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px; border: 1px solid #ddd;">Future Research Direction</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10060;</td>
+                            <td style="padding: 8px; border: 1px solid #ddd;">&#10004;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <p style="text-align: left; font-size: 0.9em; color: #555; margin-top: 20px; margin-left: 5px; padding-left: 10px;">
+                        <b>*Abbreviations:</b> PoliSci = Political Science, CPS = Computational Political Science, CS = Computer Science
+                      </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- INTRODUCTION END-->
+
+
+
+
+
+
+<!-- TAXONOMY -->
+<section class="section hero is-light">
+<div class="container is-max-desktop">
+    <div class="columns is-centered">
+        <div class="column is-four-fifths">
+            <h2 class="title is-3" style="text-align: center;">Taxonomy on LLM for Political Science</h2>
+            <div class="content has-text-justified">
+                <p>
+                  This taxonomy categorizes the integration of LLMs in political science into two areas: political science tasks and computational approaches. Tasks include predictive tasks, generative tasks, simulation, causal inference, and social impacts. Predictive tasks use LLMs to analyze public opinion, electoral outcomes, and policies, while generative tasks synthesize political data, such as summarizing legislation and debates. Simulations model political behaviors, reducing costs and improving efficiency. Causal inference identifies relationships and counterfactuals, offering insights into causality and bias. Social impacts examine campaign strategies and ethical considerations. Computational approaches comprise benchmark datasets, data processing, fine-tuning, zero/few-shot inference, and advanced techniques like retrieval-augmented generation and chain-of-thought reasoning. These methods ensure reliability, address bias, and optimize LLMs for nuanced political applications, forming a comprehensive framework for political science research.
+                </p>
+            </div>
+            <div style="text-align: center; margin: 30px 0;">
+              <img src="static/images/taxonomy.jpg" alt="PDF as image" width="800">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- TAXONOMY END -->
+
+
+
+<!-- SECTION 4: Each subsection 150 words + illustration -->
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3" style="text-align: center;">Leveraging LLMs for Political Science Tasks</h2>
+                <div class="content has-text-justified">
+                
+                <p>LLMs are transforming political science research by enhancing predictive, generative, simulation, and causal inference tasks while addressing societal and ethical considerations. This framework expands traditional applications by incorporating simulations to model human-like behaviors and causal inference to uncover underlying mechanisms in political phenomena.</p>
+                
+                <!-- 4.1 -->
+                <h4 class="title is-5" >Automation of Predictive Tasks</h4>
+                <p>
+                  Predictive tasks, like forecasting election outcomes or analyzing voter behavior, are essential in political science but often involve time-consuming manual efforts. Thanks to advancements in large language models (LLMs), these tasks are now faster, more efficient, and scalable. LLMs excel in automating data annotation, outperforming manual methods and even domain experts in analyzing political ideology, fake news, sentiment, and other political texts.
+                  For example, GPT-3 has been used to analyze U.S. corporate feedback on climate regulations, while GPT-4 has processed public opinions in New Zealand with impressive accuracy. Beyond English-speaking contexts, models like Llama have analyzed European Parliament debates, and Claude-1.3 has categorized survey responses for political studies in the UK.
+                  Tailored frameworks, such as PoliPrompt, take this further by fine-tuning LLMs for political science, enabling tasks like classifying topics, analyzing campaign sentiment, and detecting political stances with added precision. While LLMs are transforming predictive tasks, challenges remain, such as addressing cultural nuances and biases in datasets. However, ongoing improvements promise to make these tools even more impactful for political research.
+                </p>
+                <div class="figure" style="text-align: center; margin: 20px 0;">
+                  <img src="static/images/sec4-1.jpg" alt="Retrieval-based Drafting" style="width: 100%">
+                </div>
+                
+                <!-- 4.2 -->
+                <h4 class="title is-5" >Automation of Generative Tasks</h4>
+                <p>
+                  Generative tasks in political science leverage LLMs to create synthetic data, simulate scenarios, and augment incomplete datasets, addressing challenges like data scarcity, privacy concerns, and high costs of traditional methods. LLMs generate realistic proxies for missing data, enabling analysis of topics such as public sentiment on immigration, healthcare, and climate policies, or simulating voter behavior and campaign strategies. These advancements broaden research opportunities by providing efficient, cost-effective solutions where conventional approaches fall short.
+                  Beyond data synthesis, LLMs expand research scope by analyzing complex variables, such as government policy biases or ideological dynamics. They process extensive political text corpora, revealing patterns in sentiment, discourse, and public concerns at scale. Applications like coding open-ended survey responses showcase their ability to handle nuanced qualitative data efficiently.
+                  However, challenges remain in ensuring the reliability and neutrality of synthetic data. Biases and limitations in interpreting results in nuanced political contexts must be addressed to maximize LLMs’ potential in political research.
+                </p>
+                <div class="figure" style="text-align: center; margin: 20px 0;">
+                  <img src="static/images/sec4-2.png" alt="Retrieval-based Drafting" style="width: 100%">
+                </div>
+
+                <!-- 4.3 -->
+                <h4 class="title is-5" >Simulation of LLM Agents</h4>
+                <p>
+                  Simulation agents in political science leverage LLMs to model complex behaviors, decisions, and interactions, offering a dynamic way to study political processes like governance, negotiation, and conflict resolution. Unlike generative tasks, which focus on creating synthetic data to address scarcity, simulation tasks emphasize modeling interactions within environments to study strategies and evolving systems. Applications of simulation agents can be divided into two categories: simulating behavior dynamics and text-based discussions.
+                  Behavior dynamics simulations explore political processes like conflict resolution, governance under scarcity, and opinion polarization. For example, studies have modeled international diplomacy, ideological conflicts, and social contract theories using LLM agents. Text-based simulations focus on political discourse, such as U.S. Senate debates, multi-party coalition negotiations, and global diplomacy, where agents interact through dialogue to simulate decision-making and alliance-building.
+                  Despite their transformative potential, challenges include mitigating biases from training data, addressing ethical concerns, and managing the high computational costs of large-scale simulations. These issues highlight the need for robust validation and ethical safeguards. LLM-driven simulations offer new opportunities for understanding political interactions, making them a powerful tool for political science research.
+                </p>
+
+                <!-- 4.4 -->
+                <h4 class="title is-5" >LLM Explainability and Causal Inference</h4>
+                <p>
+                  LLM explainability ensures that outputs are interpretable and transparent, fostering trust in politically sensitive applications. In political science, causal inference, which identifies cause-and-effect relationships, is essential for understanding policies, voter behavior, and societal dynamics. LLMs offer new tools for causal inference by detecting patterns, modeling causal relationships, and generating counterfactual scenarios to explore “what-if” conditions. For example, they can simulate experimental data, assess treatment effects, and evaluate causal methods like propensity score matching. Explainability tools, such as attention mechanisms and prompt engineering, further enhance the transparency of LLM-driven causal analysis, especially in politically sensitive contexts.
+                  Despite their strengths, such as immunity to carryover effects and the ability to model causal graphs, LLMs face significant limitations. Critics argue that LLMs often recite learned patterns without true causal understanding, raising concerns about their reliability for causal reasoning. Unpredictable failure modes, biases embedded in training data, and ethical challenges in politically sensitive settings further complicate their use. However, with ongoing research and improvements, LLMs hold great promise for advancing explainability and causal inference in political science, offering tools for exploring cause-and-effect relationships and enabling more robust and transparent analyses.</p>
+                </p>
+
+                <!-- 4.5 -->
+                <h4 class="title is-5" >Value and Social Impacts of LLMs</h4>
+                <p>
+                  Large Language Models (LLMs) have transformative potential but raise significant ethical concerns due to biases in their training data. These biases can amplify societal inequalities, suppress marginalized voices, and reinforce stereotypes. Studies reveal that LLMs often align with specific ideological perspectives, such as progressive views, and depict socially subordinate groups as homogeneous, mirroring societal biases. Cross-lingual biases further broaden these concerns, highlighting the widespread influence of LLM-generated outputs on public discourse and decision-making.
+                  Efforts to mitigate biases focus on improving training data, refining algorithms, and applying fairness constraints. Post-processing filters, such as those demonstrated by Rozado, neutralize political biases, while frameworks like CommunityLM balance partisan worldviews. Techniques like “moral mimicry” align LLM outputs with diverse ethical frameworks, promoting inclusivity.
+                  Biases in LLMs have far-reaching impacts, shaping user perceptions, perpetuating inequalities, and hindering impartiality in global discourse. Addressing these challenges requires awareness, accountability, and transparency. Researchers must prioritize robust methodologies for bias mitigation to ensure fairness, inclusivity, and ethical deployment of LLMs in sensitive domains like politics and social sciences. These efforts are crucial to developing LLMs as tools that support equitable and responsible applications.</p>
+                </p>
+
+                <!-- 4.6 -->
+                <h4 class="title is-5" >Societal Impacts</h4>
+                <p>
+                  LLMs are transforming the political landscape by enhancing campaign strategies, improving political communication, and democratizing information access. They enable hyper-personalized voter targeting and simplify complex political content, fostering greater public understanding and engagement. By breaking down barriers to political knowledge, LLMs promote inclusivity and active civic participation.
+                  However, their societal deployment raises ethical risks, including the potential for misinformation and biased content that can manipulate public opinion or undermine democratic processes. The realistic but misleading content generated by LLMs underscores the need for robust governance frameworks and safeguards.
+                  To balance their benefits and risks, efforts must focus on responsible deployment, transparency, public awareness, and misinformation prevention. By addressing these challenges, LLMs can be harnessed to create a more equitable, informed, and participatory political environment.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- SECTION 4 END -->
+
+
+
+<!-- SECTION 5: Each subsection a few sentences + illustration -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3" style="text-align: center;">Computational Approaches for Advancing LLMs in Political Science</h2>
+              <div class="content has-text-justified">
+              
+              <p>Computational approaches for advancing LLMs in political science focus on developing specialized methods such as fine-tuning, zero/few-shot learning, and prompt engineering to adapt LLMs for political tasks. These techniques enhance the performance of LLMs in analyzing political texts, modeling ideological dynamics, and generating insights for policy and governance studies.</p>
+              
+              <!-- 5.1 -->
+              <h4 class="title is-5" >Benchmark Datasets</h4>
+              <p>
+                Benchmark datasets play a critical role in advancing LLM applications in political science, covering areas such as sentiment analysis, election prediction, legislative summarization, misinformation detection, and conflict resolution. These datasets ensure that LLM outputs align with real-world political and social contexts, enabling comprehensive evaluation and practical applications.
+                Here we conclude existing benchmark datasets.
+              </p>
+              <div style="width: 100%; text-align: center;">
+                <table>
+                  
+                  <thead>
+                    <tr>
+                      <th>Benchmark Datasets</th>
+                      <th>Application Domain</th>
+                      <th>Evaluation Criteria</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>OpinionQA Dataset</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Ability to answer 1,489 questions</td>
+                    </tr>
+                    <tr>
+                      <td>PerSenT</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Performance on 38,000 annotated paragraphs</td>
+                    </tr>
+                    <tr>
+                      <td>GermEval-2017</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Accuracy on 26,000 annotated documents</td>
+                    </tr>
+                    <tr>
+                      <td>Twitter</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Analysis of 5,802 annotated tweets</td>
+                    </tr>
+                    <tr>
+                      <td>Bengali News Comments</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Performance on 13,802 Bengali news texts</td>
+                    </tr>
+                    <tr>
+                      <td>Indonesia News</td>
+                      <td>Sentiment Analysis & Public Opinion</td>
+                      <td>Sentiment analysis on 18,810 news headlines</td>
+                    </tr>
+                    <tr>
+                      <td>U.S. Senate Returns 2020</td>
+                      <td>Election Prediction & Voting Behavior</td>
+                      <td>Prediction accuracy on 759,381 data points</td>
+                    </tr>
+                    <tr>
+                      <td>U.S. House Returns 2018</td>
+                      <td>Election Prediction & Voting Behavior</td>
+                      <td>Analysis of 836,425 data points</td>
+                    </tr>
+                    <tr>
+                      <td>State Precinct-Level Returns 2018</td>
+                      <td>Election Prediction & Voting Behavior</td>
+                      <td>Analysis of 10,527,463 data points</td>
+                    </tr>
+                    <tr>
+                      <td>2008 American National Election</td>
+                      <td>Election Prediction & Voting Behavior</td>
+                      <td>Analysis of 2,322 pre-election and 2,102 post-election surveys</td>
+                    </tr>
+                    <tr>
+                      <td>U.S. President 1976–2020</td>
+                      <td>Election Prediction & Voting Behavior</td>
+                      <td>Analysis of 4,288 data points</td>
+                    </tr>
+                    <tr>
+                      <td>BillSum</td>
+                      <td>Political Legislation</td>
+                      <td>Summarization of 33,422 U.S. Congressional bills</td>
+                    </tr>
+                    <tr>
+                      <td>CaseLaw</td>
+                      <td>Political Legislation</td>
+                      <td>Analysis of 6,930,777 state and federal cases</td>
+                    </tr>
+                    <tr>
+                      <td>DEU III</td>
+                      <td>Political Legislation</td>
+                      <td>Performance on 141 legislative proposals and 363 controversial issues</td>
+                    </tr>
+                    <tr>
+                      <td>PolitiFact</td>
+                      <td>Misinformation Detection</td>
+                      <td>Detection across six integrated datasets</td>
+                    </tr>
+                    <tr>
+                      <td>GossipCop</td>
+                      <td>Misinformation Detection</td>
+                      <td>Detection across ten integrated datasets</td>
+                    </tr>
+                    <tr>
+                      <td>Weibo</td>
+                      <td>Misinformation Detection</td>
+                      <td>Classification of 4,488 fake news and 4,640 real news items</td>
+                    </tr>
+                    <tr>
+                      <td>SciNews</td>
+                      <td>Misinformation Detection</td>
+                      <td>Detection in 2,400 scientific news stories</td>
+                    </tr>
+                    <tr>
+                      <td>UCDP</td>
+                      <td>Game Theory & Negotiation</td>
+                      <td>Analysis of armed conflicts and peace agreements</td>
+                    </tr>
+                    <tr>
+                      <td>PNCC</td>
+                      <td>Game Theory & Negotiation</td>
+                      <td>Data on peace agreements and conflict resolution</td>
+                    </tr>
+                    <tr>
+                      <td>WebDiplomacy</td>
+                      <td>Game Theory & Negotiation</td>
+                      <td>Analysis of 12,901,662 messages exchanged between players</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- 5.2 -->
+              <h4 class="title is-5" >Dataset Preparation Strategies</h4>
+              <p>
+              Dataset preparation for LLMs in political science involves collecting, annotating, and augmenting political data from sources like speeches, legislative texts, and surveys, ensuring balance across ideologies and demographics. Strategies include manual and automated annotation, preprocessing, and generating synthetic datasets to address data scarcity and enhance LLM performance in tasks like debiasing, legislative interpretation, and election prediction.
+              </p>
+              <div class="figure" style="text-align: center; margin: 20px 0;">
+                <img src="static/images/sec5-2.png" alt="Retrieval-based Drafting" style="width: 100%">
+              </div>
+
+              <!-- 5.3 -->
+              <h4 class="title is-5" >Fine-Tuning LLMs for Political Science</h4>
+              <p>
+              Fine-tuning LLMs for political science involves adapting pre-trained models to specialized tasks, such as legislative summarization, using domain-specific datasets like BillSum. This process includes data preprocessing, parameter-efficient fine-tuning techniques like LoRA, and prompt engineering to ensure the model generates accurate, concise, and accessible outputs. Fine-tuned models can effectively summarize legislative documents, generalize across legislative domains, and enhance understanding of complex legal texts for diverse audiences.
+              </p>
+              
+              <!-- 5.4 -->
+              <h4 class="title is-5" >In-Context Learning: Zero-Shot Inference for LLMs</h4>
+              <p>
+              Zero-Shot Learning (ZSL) allows LLMs to perform tasks like sentiment analysis in political science without task-specific training, leveraging pre-existing linguistic knowledge. By using carefully crafted prompts that provide context and task instructions, ZSL enables LLMs to classify sentiment, ideology, and stances on political statements efficiently. This approach is particularly valuable for analyzing public opinion during events like elections, as it eliminates the need for annotated datasets while maintaining flexibility and accuracy in real-world political applications. 
+              </p>
+
+              <!-- 5.5 -->
+              <h4 class="title is-5" >Inference with LLMs: Few-Shot In-Context Learning</h4>
+              <p>
+              Few-shot learning leverages minimal labeled examples embedded in prompts to enable LLMs to perform specialized political science tasks, bridging the gap between zero-shot inference and full fine-tuning. By carefully selecting diverse and context-rich examples, few-shot learning enhances tasks like fake news detection, public opinion analysis, and policy stance classification, making it a flexible, cost-effective approach for nuanced political discourse and real-time analysis in data-scarce environments.
+              </p>
+
+              <!-- 5.6 -->
+              <h4 class="title is-5" >Other Techniques Enhancing LLM Inference</h4>
+              <p>
+              Explore advanced techniques that enhance LLM inference in political science applications, including Retrieval-Augmented Generation (RAG) for integrating real-time data, Chain-of-Thought Reasoning (CoT) for step-by-step logical analysis, Knowledge Editing for updating model knowledge dynamically, and Contrastive Decoding for generating more consistent and reliable outputs. These methods bring greater precision, adaptability, and depth to tasks like policy analysis, public opinion tracking, and complex political discourse.
+              </p>
+              <div class="figure" style="text-align: center; margin: 20px 0;">
+                <img src="static/images/sec5-6.jpg" alt="Retrieval-based Drafting" style="width: 100%">
+              </div>
+
+            </div>
+      </div>
+  </div>
+</div>
+</section>
+<!-- SECTION 5 END -->
+  
+<!-- CASE -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3" style="text-align: center;"><img src="static/images/Llama.png" style="height: 43px; display: inline; vertical-align:text-top;"/>&nbsp; Abstract</h2> -->
+        <h2 class="title is-3" style="text-align: center;">Case Study</h2>
+        <div class="content has-text-justified">
+          <p>
+          This case study evaluates political bias and feature generation quality in four LLMs (GPT-4o, GPT-4o-mini, Llama 3.1-8B, Llama 3.1-70B) using the 2016 ANES dataset. Two experiments were conducted: voting simulation and feature generation. The results highlight:
+          </p>
+          <h4 class="title is-5" >Voting Simulation Bias</h4>
+          <p>
+          Larger models like GPT-4o and Llama 3.1-70B produced outputs closely aligned with actual voting distributions, particularly when political features were included. Smaller models showed skewed results favoring the winning party of 2016 (Republican), indicating their limitations in bias mitigation.
+          </p>
+          <h4 class="title is-5" >Feature Generation Quality</h4>
+          <p>
+          Larger models generated political ideologies that closely matched the ground truth, while smaller models failed to reflect diverse political perspectives, often defaulting to alignments with the 2016 winning party.
+          </p>
+          <p>
+          The study underscores the role of political features in reducing bias and the superior generation capabilities of larger models.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CASE END -->
+
+
+<!-- CONCLUSION -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3" style="text-align: center;"><img src="static/images/Llama.png" style="height: 43px; display: inline; vertical-align:text-top;"/>&nbsp; Abstract</h2> -->
+        <h2 class="title is-3" style="text-align: center;">Future Directions and Challenges</h2>
+        <div class="content has-text-justified">
+          <p>
+          The integration of Large Language Models (LLMs) into political science offers immense potential but also presents significant challenges. A primary issue is adapting LLMs to political tasks that require nuanced contextual understanding of concepts like ideology and policy framing. Future research should focus on domain-specific fine-tuning, hybrid human-AI workflows, and modularized pipelines, which divide complex tasks like election forecasting into sub-components (e.g., data preprocessing, regional analysis, and predictive modeling). Retrieval-Augmented Generation (RAG) can further enhance these pipelines by dynamically incorporating real-time data, ensuring outputs remain contextually relevant.
+          </p>  
+          <p>
+          Data scarcity is another major obstacle, as political science lacks large-scale, high-quality datasets tailored to tasks like election modeling or policy analysis. To address this, researchers can develop domain-specific datasets from political speeches or legislative records and use LLMs for synthetic data generation to simulate rare events or expand data diversity. Validation protocols must ensure the reliability and neutrality of these datasets, while partnerships with public institutions can provide better access to valuable data.
+          </p>  
+          <p>
+          Bias and fairness remain critical challenges, as LLMs can reflect and amplify biases in training data. Techniques like knowledge editing and counterfactual data augmentation can mitigate these biases by balancing underrepresented perspectives. Additionally, Explainable AI (XAI) can enhance transparency by clarifying the reasoning behind model predictions, fostering trust in politically sensitive applications.
+          </p>
+          <p>
+          Hallucinations—where LLMs generate plausible but inaccurate outputs—pose risks in tasks like legislative summarization or policy analysis. Strategies such as feature attribution, causal modeling, and validation checkpoints can address this issue, ensuring outputs are grounded in factual data and aligned with empirical evidence.
+          </p>  
+          <p>
+          Lastly, democratizing access to political knowledge is essential for enabling broader public engagement. LLM-powered tools can simplify complex political language, provide multilingual support, and incorporate ethical AI principles to make political information accessible, accurate, and inclusive. To advance computational political science, novel evaluation metrics should be developed, assessing outputs for policy relevance, electoral impact, legislative influence, and fairness, ensuring models align with real-world political demands.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CONCLUSION END-->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{sun2024triforce,
+    title={Triforce: Lossless acceleration of long sequence generation with hierarchical speculative decoding},
+    author={Sun, Hanshi and Chen, Zhuoming and Yang, Xinyu and Tian, Yuandong and Chen, Beidi},
+    journal={arXiv preprint arXiv:2404.11912},
+    year={2024}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>. The icons are created by GPT4. 
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
+
+<!-- End Solutions -->
+<!--
+                    <br>
+                    <h4 class="title is-5" ><img src="static/images/demo.png" style="height: 36px; display: inline; vertical-align: middle;"/>&nbsp; Summarize a Book of 127K Tokens</h4>
+                    <p>
+                    Here we present a demo for LWM-Text-Chat-128K inference on two RTX 4090s with 127K contexts (with and without TriForce). We prefill the model with 127K tokens from a book in NarrativeQA, directing the model to summarize the book's content. The video is displayed at normal speed (1x).
+                    </p>
+                    <div class="item item-video1">
+                            <video poster="" id="video1" autoplay controls muted height="100%">
+                                Your video file here
+                                <source src="static/videos/TriForce.mp4"
+                                type="video/mp4">
+                            </video>
+                    </div>
+                    -->
+<!-- TriForce -->
