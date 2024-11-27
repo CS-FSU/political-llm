@@ -13,7 +13,6 @@
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
-
   <meta name="twitter:title" content="Political-LLM">
   <meta name="twitter:description" content="Political-LLM: Large Language Models in Political Science">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
@@ -22,7 +21,6 @@
   <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Speculative Decoding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>Political-LLM: Large Language Models in Political Science</title>
   <link rel="icon" type="image/x-icon" href="static/images/triforce.png">
@@ -54,106 +52,134 @@
       font-family: 'TriForceFont';
       src: url('static/Triforce.ttf') format('truetype');
     }
-  
+
     .custom-font {
       font-family: 'TriForceFont', sans-serif !important;
-        font-size: 3.0rem;
+      font-size: 3.0rem;
+    }
+
+    .author-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .author-block {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    .affiliation-list {
+      margin-top: 1rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .affiliation-list small {
+      display: inline;
+      margin-right: 0.5rem;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-
-
-
-
-
-
-
 
 <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- <h3 class="custom-font" style="display: inline;">*</h3> -->
             <h1 class="title is-2 publication-title" style="display: inline;">Political-LLM: Large Language Models in Political Science</h1>
             <br><br>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="https://preminstrel.com/" target="_blank">Lincan Li</a><sup>1</sup>,</span>
-                <span class="author-block">
-                <a href="https://dreaming-panda.github.io/" target="_blank">Jiaqi Li</a><sup>2</sup>,</span>
-                <span class="author-block">
-                    <a href="Catherine Chen" target="_blank">Catherine Chen</a><sup>3,*</sup>
-                <span class="author-block">
-                    <a href="Fred Gui" target="_blank">Fred Gui</a><sup>3,*</sup>
-                <span class="author-block">
-                    <a href="Hongjia Yang" target="_blank">Hongjia Yang</a><sup>4</sup>
-                <span class="author-block">
-                    <a href="Chenxiao Yu" target="_blank">Chenxiao Yu</a><sup>2</sup>
-                  </span> <br>
-              <span class="author-block">
-                    <a href="#" target="_blank">Zhengguang Wang</a><sup>4</sup>,  
-              <span class="author-block">
-                <a href="Jianing Cai" target="_blank">Jianing Cai</a><sup>5</sup>
-              <span class="author-block">
-                <a href="Junlong Zhou" target="_blank">Junlong Zhou</a><sup>6</sup>
-              <span class="author-block">
-                <a href="Bolin Shen" target="_blank">Bolin Shen</a><sup>1</sup>
-              <span class="author-block">
-                <a href="Alex Qian" target="_blank">Alex Qian</a><sup>2</sup>
-                </span>
-                </div>
-                <div class="is-size-5 publication-authors">
-                <span class="affliation"><small><sup>1</sup>Florida State University <sup>2</sup>University of Southern California <sup>3</sup>Louisiana State University</small></small></span><br>
-                <span class="affliation"><small><sup>4</sup>University of Virginia <sup>5</sup>University of Pennsylvania <sup>6</sup>Tencent U.S. <sup>7</sup>Oxford University </small></small></span><br>
-                <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding Authors</small></span>
-                </div>
+            <div class="author-list">
+              <div class="author-block">
+                <a href="https://preminstrel.com/" target="_blank">Lincan Li</a><sup>1</sup>
+              </div>
+              <div class="author-block">
+                <a href="https://dreaming-panda.github.io/" target="_blank">Jiaqi Li</a><sup>2</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Catherine Chen</a><sup>3,*</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Fred Gui</a><sup>3,*</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Hongjia Yang</a><sup>4</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Chenxiao Yu</a><sup>2</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Zhengguang Wang</a><sup>4</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Jianing Cai</a><sup>5</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Junlong Zhou</a><sup>6</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Bolin Shen</a><sup>1</sup>
+              </div>
+              <div class="author-block">
+                <a href="#" target="_blank">Alex Qian</a><sup>2</sup>
+              </div>
+            </div>
 
-                <div class="column has-text-centered">
-                
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                    <a href="https://arxiv.org/abs/2404.11912" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                    </a>
-                </span>
+            <div class="affiliation-list">
+              <small><sup>1</sup>Florida State University</small>
+              <small><sup>2</sup>University of Southern California</small>
+              <small><sup>3</sup>Louisiana State University</small>
+              <small><sup>4</sup>University of Virginia</small>
+              <small><sup>5</sup>University of Pennsylvania</small>
+              <small><sup>6</sup>Tencent U.S.</small>
+              <small><sup>7</sup>Oxford University</small>
+              <br>
+              <small><sup>*</sup>Corresponding Authors</small>
+            </div>
 
-                <!-- Github link -->
-                <span class="link-block">
-                    <a href="https://github.com/Infini-AI-Lab/TriForce/tree/main" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                    </a>
+            <div class="column has-text-centered">
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.11912" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
                 </span>
+                <span>arXiv</span>
+                </a>
+              </span>
 
-                <!-- Video Link -->
-                <span class="link-block">
-                    <a href="https://youtu.be/vRAaAyjr6Jo" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                    </a>
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/Infini-AI-Lab/TriForce/tree/main" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
                 </span>
+                <span>Code</span>
+                </a>
+              </span>
+
+              <!-- Video Link -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1bX8sEtfGAH7sATU_rXmN2E3_a--BtyDV/view?usp=sharing" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </section>
-
-
 
 
 
