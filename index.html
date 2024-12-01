@@ -122,7 +122,24 @@
         height: auto;
     }
 
-    
+/* 使表格在小屏幕上滚动 */
+    table {
+        width: 100%;
+        border-collapse: collapse; /* 避免边框重叠 */
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+        border: 1px solid #ddd;
+    }
+
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* 启用惯性滚动 */
+    }
+
+  
   </style>
 </head>
 <body>
