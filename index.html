@@ -87,6 +87,35 @@
       margin-right: 0.5rem;
       line-height: 1.5;
     }
+         /* 针对平板设备 */
+    @media (max-width: 1024px) {
+        .content {
+            flex-wrap: wrap;
+        }
+
+        .box {
+            background-color: #e0f7fa;
+        }
+    }
+         /* 针对手机设备 */
+    @media (max-width: 768px) {
+        .content {
+            flex-direction: column;
+        }
+
+        .box {
+            background-color: #ffecb3;
+            margin: 5px 0;
+        }
+    }
+
+        /* 针对小屏幕手机 */
+    @media (max-width: 480px) {
+        .box {
+            font-size: 14px;
+            padding: 10px;
+        }
+    }    
     
   </style>
 </head>
