@@ -123,6 +123,11 @@
     }
 
 /* 使表格在小屏幕上滚动 */
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* 启用惯性滚动 */
+        width: 100%; /* 容器宽度 */
+    }
     table {
         width: 100%;
         border-collapse: collapse; /* 避免边框重叠 */
@@ -134,10 +139,7 @@
         border: 1px solid #ddd;
     }
 
-    .table-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* 启用惯性滚动 */
-    }
+
 
   
   </style>
@@ -424,7 +426,8 @@
                     <p>
                     <span style="background-color: yellow;">Here is how our survey is <b>different</b> from existing ones:</span>
                     </p>
-                    <div style="width: 100%; text-align: center;">
+                    <!--div style="width: 100%; text-align: center;"-->
+                    <div class="table-container">
                       <table style="margin: auto; border: 1px solid #ddd; border-collapse: collapse; text-align: left; width: 90%;">
                         <div style="text-align: center; font-size: 1.2em; font-weight: bold; margin-bottom: 10px;">
                           Comparison with Existing Surveys on LLM for Political Science Topics
