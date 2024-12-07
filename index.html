@@ -845,8 +845,14 @@
         <h2 class="title is-3" style="text-align: center;">Case Study</h2>
         <div class="content has-text-justified">
           <p>
-          This case study evaluates political bias and feature generation quality using four publicly available general LLMs (GPT-4o, GPT-4o-mini, Llama 3.1-8B, Llama 3.1-70B) and their variants with the [2016 ANES benchmark dataset]<a href="https://electionstudies.org/data-center/2016-time-series-study/" target="_blank">2016 ANES benchmark dataset</a>. Two experiments were conducted: voting simulation and feature generation. The results highlight:
+          This case study evaluates political bias and feature generation quality using four publicly available general LLMs (GPT-4o, GPT-4o-mini, Llama 3.1-8B, Llama 3.1-70B) and their variants with the <a href="https://electionstudies.org/data-center/2016-time-series-study/" target="_blank">2016 ANES benchmark dataset</a>. We quantitatively evaluate: (1) voting simulation bias, and (2) feature generation quality. The results highlight:
           </p>
+          <h4 class="title is-5">LLM Configurations and Hardware Resource</h4>
+          <p>
+          We evaluated four large language models (LLMs) with varying parameter sizes: two commercial models, GPT-4o and GPT-4o-mini, and two open-source models, Llama 3.1 8-B and Llama 3.1-70B.
+          The hardware configurations were tailored to meet the computational requirements of each model. For GPT-4o and GPT-4o-mini, experiments were conducted on a GPU server equipped with an AMD EPYC Milan 7763 processor, 1 TB of DDR4 memory, 15 TB SSD storage, and 6 NVIDIA RTX A6000 GPUs. For Llama 3.1 models, a node with 8 NVIDIA A100 GPUs (each with 40 GB of memory), dual AMD Milan CPUs, 2 TB of RAM, and 1.5 TB of local storage was utilized.
+          </p>  
+          
           <h4 class="title is-5" >Voting Simulation Bias</h4>
           <p>
           Larger models like GPT-4o and Llama 3.1-70B produced outputs closely aligned with actual voting distributions, particularly when political features were included. Smaller models showed skewed results favoring the winning party of 2016 (Republican), indicating their limitations in bias mitigation.
