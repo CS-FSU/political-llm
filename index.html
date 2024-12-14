@@ -581,7 +581,56 @@
 </section>
 <!-- INTRODUCTION END-->
 
+          
+<!--Preliminaries-->
+<section class="preliminaries">
+<div class="preliminaries-section">
+  <h2>Preliminaries</h2>
+  <p>Click on any topic below to view its detailed explanation.</p>
 
+  <div class="preliminaries-buttons" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
+    <button class="preliminary-btn" onclick="toggleDetails('cps')">Computational Political Science (CPS)</button>
+    <button class="preliminary-btn" onclick="toggleDetails('evolution')">Evolution of Language Models in Political Science</button>
+    <button class="preliminary-btn" onclick="toggleDetails('llms')">Large Language Models (LLMs)</button>
+    <button class="preliminary-btn" onclick="toggleDetails('core-concepts')">Core Computational Political Science Concepts</button>
+  </div>
+
+  <div class="preliminaries-details" style="margin-top: 20px;">
+    <div id="cps" class="details" style="display: none;">
+      <h3>Computational Political Science (CPS)</h3>
+      <p>Computational Political Science integrates computational methods with political science to analyze systems, behaviors, and outcomes, leveraging tools such as data analytics, machine learning, and natural language processing.</p>
+    </div>
+
+    <div id="evolution" class="details" style="display: none;">
+      <h3>Evolution of Language Models in Political Science</h3>
+      <p>From early rule-based systems to modern pre-trained language models like Word2Vec and BERT, advancements in NLP have enabled deeper analysis of political texts, enhancing tasks like policy analysis and public opinion mining.</p>
+    </div>
+
+    <div id="llms" class="details" style="display: none;">
+      <h3>Large Language Models (LLMs)</h3>
+      <p>LLMs, based on Transformer architecture, revolutionize text processing with capabilities like multi-head attention and bidirectional context understanding, enabling applications across political science tasks.</p>
+    </div>
+
+    <div id="core-concepts" class="details" style="display: none;">
+      <h3>Core Computational Political Science Concepts</h3>
+      <p>Key concepts include political data sources, election prediction, policy interpretation, misinformation detection, and political risk analysis, all enhanced by the capabilities of LLMs.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleDetails(id) {
+    const details = document.querySelectorAll('.details');
+    details.forEach(detail => {
+      if (detail.id === id) {
+        detail.style.display = detail.style.display === 'none' ? 'block' : 'none';
+      } else {
+        detail.style.display = 'none';
+      }
+    });
+  }
+</script>
+</section>
 
 
 
