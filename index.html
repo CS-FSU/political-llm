@@ -624,6 +624,21 @@
 </div>
 
 <style>
+  /* 设置 Preliminaries 的背景颜色和填充 */
+  .preliminaries {
+    background-color: #f5f5f5; /* 灰色背景 */
+    padding: 40px 0; /* 上下留白 */
+  }
+  
+  /* 内容居中 */
+  .content-wrapper {
+    max-width: 800px; /* 限制内容宽度 */
+    margin: 0 auto; /* 居中对齐 */
+    padding: 20px; /* 内部留白 */
+    border-radius: 5px; /* 圆角 */
+  }
+  
+  /* 按钮样式 */
   .preliminary-btn {
     background-color: #4CAF50;
     color: white;
@@ -642,17 +657,22 @@
     margin: auto;
     box-sizing: border-box;
   }
-
+  
   .preliminary-btn:hover {
     background-color: #45a049;
     transform: scale(1.05);
   }
-
+  
+  /* 按钮网格布局 */
   .preliminaries-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
     max-width: 600px;
     margin: 0 auto;
   }
-
+  
+  /* 详细内容框样式 */
   .details {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -660,6 +680,7 @@
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
 </style>
 
 <script>
