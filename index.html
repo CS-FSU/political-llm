@@ -590,7 +590,7 @@
   <div class="column is-four-fifths">
   <h2 class="title is-3" style="text-align: center;">Preliminaries</h2>
   <p style="font-family: 'Georgia', serif; font-size: 20px; font-style: italic; color: #555; border-bottom: 1px solid #ddd; padding-bottom: 5px; text-align: left;">
-Here are some <strong style="color: #000;">essential preliminaries</strong> to guide you through our research. Click on these buttons below to view their detailed explanations.
+Here are some <strong style="color: #CC3333;">essential preliminaries</strong> to guide you through our research. Click on these buttons below to view their detailed explanations.
 </p>
 
   <div class="preliminaries-buttons" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
@@ -603,22 +603,29 @@ Here are some <strong style="color: #000;">essential preliminaries</strong> to g
   <div class="preliminaries-details" style="margin-top: 20px;">
     <div id="cps" class="details" style="display: none;">
       <h3>Computational Political Science (CPS)</h3>
-      <p>Computational Political Science integrates computational methods with political science to analyze systems, behaviors, and outcomes, leveraging tools such as data analytics, machine learning, and natural language processing.</p>
+      <p>Computational Political Science (CPS) is an interdisciplinary field that integrates computational methods with political science to analyze political systems, behaviors, and outcomes. By leveraging tools such as data analytics, machine learning, and natural language processing (NLP), 
+         CPS enhances the understanding of complex political phenomena. The field has evolved from relying on traditional statistical models, such as regression-based analyses, to embracing AI-driven approaches that enable the processing of large-scale, unstructured political data. This shift has been particularly transformative in tasks like election forecasting, public opinion analysis, and policy evaluation, where modern techniques offer greater scalability and accuracy.</p>
     </div>
 
     <div id="evolution" class="details" style="display: none;">
       <h3>Evolution of Language Models in Political Science</h3>
-      <p>From early rule-based systems to modern pre-trained language models like Word2Vec and BERT, advancements in NLP have enabled deeper analysis of political texts, enhancing tasks like policy analysis and public opinion mining.</p>
+      <p>Early applications of AI in political science relied on rule-based systems and traditional machine learning methods, such as logistic regression and support vector machines (SVMs), to perform basic political tasks. These methods were limited by their reliance on manually crafted features and structured data. The advent of pre-trained language models, including Word2Vec and BERT, marked a significant shift in natural language processing, enabling the analysis of large-scale, 
+        unstructured political text. By capturing contextual relationships and semantic nuances in data, these models greatly enhanced the ability to process complex political discourse, advancing domain applications like policy analysis, legislative interpretation, and public opinion mining.</p>
     </div>
 
     <div id="llms" class="details" style="display: none;">
       <h3>Large Language Models (LLMs)</h3>
-      <p>LLMs, based on Transformer architecture, revolutionize text processing with capabilities like multi-head attention and bidirectional context understanding, enabling applications across political science tasks.</p>
+      <p>The foundation of most LLMs lies in the Transformer architecture, which introduced the self-attention mechanism to effectively model long-range dependencies in text. This innovation marked a departure from earlier sequence models like RNNs and LSTMs, which struggled with vanishing gradients and limited context windows. 
+        Core components such as multi-head attention, feedforward layers, and positional encodings enabled Transformers to process sequences in parallel, significantly improving scalability and efficiency. Early LLMs, such as BERT, leveraged the Transformer framework through masked language modeling, excelling in bidirectional context understanding. 
+        Autoregressive architectures like GPT later extended these capabilities, focusing on sequential token prediction for fluent and coherent text generation. The advent of models like T5 unified various NLP tasks under a single architecture by using sequence-to-sequence learning. Recent advancements further evolved LLM architectures, emphasizing efficiency and task-specific adaptability. 
+        Additionally, innovations like multimodal architectures and scalable models such as LLaMA and GPT-4 demonstrate a shift toward systems capable of cross-domain understanding and dynamic interaction, underpinning the transformative potential of LLMs in computational tasks across fields.
+      </p>  
     </div>
 
     <div id="core-concepts" class="details" style="display: none;">
       <h3>Core Computational Political Science Concepts</h3>
-      <p>Key concepts include political data sources, election prediction, policy interpretation, misinformation detection, and political risk analysis, all enhanced by the capabilities of LLMs.</p>
+      <p>Key concepts include <b>Political Data Sources and Text Generation</b>, <b>Election Prediction and Voting Behavior</b>, <b>Policy and Legislative Interpretation</b>,
+        <b>Misinformation/Fake News Detection</b>, <b>Political Risk and Conflict Prediction</b>, and <b>Political Game Theory and Negotiation.</b></p>
     </div>
   </div>
   </div>
@@ -637,7 +644,7 @@ Here are some <strong style="color: #000;">essential preliminaries</strong> to g
     max-width: 800px; /* 限制内容宽度 */
     margin: 0 auto; /* 居中对齐 */
     padding: 20px; /* 内部留白 */
-    border-radius: 5px; /* 圆角 */
+    border-radius: 8px; /* 圆角 */
   }
   
   /* 按钮样式 */
@@ -669,8 +676,8 @@ Here are some <strong style="color: #000;">essential preliminaries</strong> to g
   .preliminaries-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px; /* 行间距 */
-    column-gap: 20px; /* 列间距 */
+    row-gap: 20px; /* 行间距 */
+    column-gap: 50px; /* 列间距 */
     max-width: 600px;
     margin: 0 auto;
   }
