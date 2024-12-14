@@ -585,7 +585,7 @@
 <!--Preliminaries-->
 <section class="preliminaries">
   <!--div class="container is-max-desktop"-->
-  <div class="container is-max-desktop" style="max-width: 800px; margin: 0 auto; background-color: #f5f5f5; padding: 20px; border-radius: 5px;">
+  <div class="container is-max-desktop" style="max-width: 880px; margin: 0 auto; background-color: #f5f5f5; padding: 20px; border-radius: 5px;">
   <div class="columns is-centered has-text-centered">
   <div class="column is-four-fifths">
   <h2 class="title is-3" style="text-align: center;">Preliminaries</h2>
@@ -669,7 +669,8 @@ Here are some <strong style="color: #000;">essential preliminaries</strong> to g
   .preliminaries-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    row-gap: 50px; /* 行间距 */
+    column-gap: 20px; /* 列间距 */
     max-width: 600px;
     margin: 0 auto;
   }
