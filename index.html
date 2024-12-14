@@ -602,20 +602,20 @@ Here are some <strong style="color: #CC3333;">essential preliminaries</strong> t
 
   <div class="preliminaries-details" style="margin-top: 20px;">
     <div id="cps" class="details" style="display: none;">
-      <h3>Computational Political Science (CPS)</h3>
-      <p>Computational Political Science (CPS) is an interdisciplinary field that integrates computational methods with political science to analyze political systems, behaviors, and outcomes. By leveraging tools such as data analytics, machine learning, and natural language processing (NLP), 
+      <h3><b>Computational Political Science (CPS).</b></h3>
+      <p style="text-align: left;">Computational Political Science (CPS) is an interdisciplinary field that integrates computational methods with political science to analyze political systems, behaviors, and outcomes. By leveraging tools such as data analytics, machine learning, and natural language processing (NLP), 
          CPS enhances the understanding of complex political phenomena. The field has evolved from relying on traditional statistical models, such as regression-based analyses, to embracing AI-driven approaches that enable the processing of large-scale, unstructured political data. This shift has been particularly transformative in tasks like election forecasting, public opinion analysis, and policy evaluation, where modern techniques offer greater scalability and accuracy.</p>
     </div>
 
     <div id="evolution" class="details" style="display: none;">
-      <h3>Evolution of Language Models in Political Science</h3>
-      <p>Early applications of AI in political science relied on rule-based systems and traditional machine learning methods, such as logistic regression and support vector machines (SVMs), to perform basic political tasks. These methods were limited by their reliance on manually crafted features and structured data. The advent of pre-trained language models, including Word2Vec and BERT, marked a significant shift in natural language processing, enabling the analysis of large-scale, 
+      <h3><b>Evolution of Language Models in Political Science.</b></h3>
+      <p style="text-align: left;">Early applications of AI in political science relied on rule-based systems and traditional machine learning methods, such as logistic regression and support vector machines (SVMs), to perform basic political tasks. These methods were limited by their reliance on manually crafted features and structured data. The advent of pre-trained language models, including Word2Vec and BERT, marked a significant shift in natural language processing, enabling the analysis of large-scale, 
         unstructured political text. By capturing contextual relationships and semantic nuances in data, these models greatly enhanced the ability to process complex political discourse, advancing domain applications like policy analysis, legislative interpretation, and public opinion mining.</p>
     </div>
 
     <div id="llms" class="details" style="display: none;">
-      <h3>Large Language Models (LLMs)</h3>
-      <p>The foundation of most LLMs lies in the Transformer architecture, which introduced the self-attention mechanism to effectively model long-range dependencies in text. This innovation marked a departure from earlier sequence models like RNNs and LSTMs, which struggled with vanishing gradients and limited context windows. 
+      <h3><b>Large Language Models (LLMs).</b></h3>
+      <p style="text-align: left;">The foundation of most LLMs lies in the Transformer architecture, which introduced the self-attention mechanism to effectively model long-range dependencies in text. This innovation marked a departure from earlier sequence models like RNNs and LSTMs, which struggled with vanishing gradients and limited context windows. 
         Core components such as multi-head attention, feedforward layers, and positional encodings enabled Transformers to process sequences in parallel, significantly improving scalability and efficiency. Early LLMs, such as BERT, leveraged the Transformer framework through masked language modeling, excelling in bidirectional context understanding. 
         Autoregressive architectures like GPT later extended these capabilities, focusing on sequential token prediction for fluent and coherent text generation. The advent of models like T5 unified various NLP tasks under a single architecture by using sequence-to-sequence learning. Recent advancements further evolved LLM architectures, emphasizing efficiency and task-specific adaptability. 
         Additionally, innovations like multimodal architectures and scalable models such as LLaMA and GPT-4 demonstrate a shift toward systems capable of cross-domain understanding and dynamic interaction, underpinning the transformative potential of LLMs in computational tasks across fields.
@@ -623,13 +623,37 @@ Here are some <strong style="color: #CC3333;">essential preliminaries</strong> t
     </div>
 
     <div id="core-concepts" class="details" style="display: none;">
-      <h3>Core Computational Political Science Concepts</h3>
+      <h3><b>Core Computational Political Science Concepts.</b></h3>
       <p>Key concepts include (1) Political Data Sources and Text Generation, (2) Election Prediction and Voting Behavior, (3) Policy and Legislative Interpretation,
         (4) Misinformation/Fake News Detection, (5) Political Risk and Conflict Prediction, and (6) Political Game Theory and Negotiation.</p>
-      <p>
+      <p style="text-align: left;">
       <b>Political Data Sources and Text Generation.</b> Political data encompasses diverse sources such as political news, speeches, legislative records, party manifestos, social media contents, etc. Analyzing these data requires handling challenges like data scarcity, imbalance, and linguistic nuances, which hinder comprehensive analysis. One critical application in CPS is \textit{Political Text Generation}, where LLMs are employed to produce political content such as speeches, policy briefs, 
       and debate scripts. These generative models assist political figures and analysts by creating coherent, persuasive, and contextually relevant texts. LLMs can simulate political scenarios and craft narratives, shaping public opinion and enhancing political communication.
       </p>
+      <p style="text-align: left;">
+      <b>Election Prediction and Voting Behavior.</b> Election prediction focuses on forecasting voter turnout, swing state dynamics, and overall electoral outcomes. LLMs analyze a combination of historical election data, public opinion surveys, and social media discourse to identify patterns influencing voter behavior~\cite{rotaru2024artificial,potter2024hiddenpersuadersllmspolitical}. These models provide insights into key demographic and psychological factors affecting voter preferences, 
+      aiding political campaigns and policymakers in tailoring strategies to engage the electorate effectively.
+      </p>
+      <p>
+      <b>Policy and Legislative Interpretation.</b>
+      Policy and legislative interpretation involves analyzing complex legal texts, such as bills, statutes, administrative rules, and debates, to understand their implications and the ideologies they represent. LLMs excel at parsing and summarizing these documents, identifying key arguments, 
+      and predicting potential policy outcomes. This capability offers political scientists a deeper understanding of legislative processes and helps anticipate the effects of policy changes on societal and political structures.
+      </p>
+      <p>
+      <b>Misinformation/Fake News Detection.</b>
+      Safeguarding political discourse requires addressing misinformation and fake news, which can significantly distort public opinion and decision-making. LLMs are adept at detecting false or biased information by analyzing the structure, intent, 
+      and credibility of news articles, social media posts, and political statements. By flagging harmful content, these models ensure the integrity of political information and contribute to maintaining a healthy democratic environment.
+      </p>
+      <p>
+      <b>Political Risk and Conflict Prediction.</b>
+      Political risk and conflict prediction aim to forecast the likelihood of political instability, unrest, or international conflict. CPS-based methods can analyze geopolitical data, diplomatic communications, and historical trends to identify early signs of conflict and assess the risks involved in political decisions. 
+      These predictions are invaluable for policymakers and international organizations in making informed decisions and preparing for possible crises.
+      </p>
+      <p>
+      <b>Political Game Theory and Negotiation.</b>
+      Political game theory and negotiation involve modeling strategic interactions between political entities, such as governments, parties, or international entities~\cite{meta2022human}. The latest advancements in LLMs hold promise in analyzing negotiation strategies, predicting the outcomes of political bargaining, and identifying optimal decision-making approaches. 
+      By simulating various political scenarios, LLMs are expected to have a better understanding of power dynamics, coalition building, and diplomatic negotiations in international politics.
+      </p>  
     </div>
   </div>
   </div>
